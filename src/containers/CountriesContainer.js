@@ -8,7 +8,7 @@ function CountriesContainer() {
 useEffect(() => {
 fetch("https://restcountries.com/v3.1/all")
     .then((response) => response.json())
-    .then((data) => setCountries(data));
+    .then((jsonData) => setCountries(jsonData));
 }, []);
 
 const handleVisitedCountry = (name) => {
